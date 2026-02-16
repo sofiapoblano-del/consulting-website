@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 48" width="328" height="48">
+  <defs>
+    <clipPath id="topHalf">
+      <rect x="-500" y="-500" width="2000" height="522"/>
+    </clipPath>
+    <clipPath id="bottomHalf">
+      <rect x="-500" y="22" width="2000" height="2000"/>
+    </clipPath>
+
+    <style>
+      .neotek {
+        font-family: 'Impact', 'Arial Black', sans-serif;
+        font-weight: 900;
+        font-size: 44px;
+        fill: #000;
+      }
+    </style>
+  </defs>
+
+  <!-- NEOTEK: LOCKED — 1px glitch, flush at y=22 -->
+  <g clip-path="url(#topHalf)">
+    <text transform="translate(-1, 0) skewX(-20)" x="22" y="40" class="neotek">NEOTEK</text>
+  </g>
+  <g clip-path="url(#bottomHalf)">
+    <text transform="translate(1, 0) skewX(-20)" x="22" y="40" class="neotek">NEOTEK</text>
+  </g>
+
+  <!--
+    Icon: Eccentric nested circles.
+    36px wide (512 × 0.0703). Occupies x=148 to x=184.
+  -->
+  <g transform="translate(148, 4) scale(0.0703)">
+    <circle cx="256" cy="256" r="254" fill="#000"/>
+    <circle cx="256" cy="320" r="190" fill="#fff"/>
+    <circle cx="256" cy="383" r="127" fill="#000"/>
+    <circle cx="256" cy="475" r="35" fill="#fff"/>
+  </g>
+
+  <!--
+    MEDIA: Outlined vector paths.
+    Shifted +4px right, letter gaps widened from 1.5px to 2.5px.
+  -->
+  <g fill="#000">
+    <!-- M (x=190–224, 34px wide) -->
+    <path d="M 190,4 H 198 L 207,28 L 216,4 H 224 V 40 H 218 V 10 L 207,40 L 196,10 V 40 H 190 Z"/>
+
+    <!-- E (x=226.5–248.5, 22px wide) -->
+    <path d="M 226.5,4 H 248.5 V 10 H 232.5 V 19 H 242.5 V 25 H 232.5 V 34 H 248.5 V 40 H 226.5 Z"/>
+
+    <!-- D (x=251–277, 26px wide) -->
+    <path d="M 251,4 H 265 C 281,4 281,40 265,40 H 251 Z M 257,10 V 34 H 265 C 273,34 273,10 265,10 Z" fill-rule="evenodd"/>
+
+    <!-- I (x=279.5–285.5, 6px wide) -->
+    <path d="M 279.5,4 H 285.5 V 40 H 279.5 Z"/>
+
+    <!-- A (x=288–316, 28px wide) — sharp apex at (302,4) -->
+    <path d="M 302,4 L 316,40 H 288 Z M 302,19 L 299.3,26 H 304.7 Z M 297.3,31 L 293.8,40 H 310.2 L 306.7,31 Z" fill-rule="evenodd"/>
+  </g>
+</svg>

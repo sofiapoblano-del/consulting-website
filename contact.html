@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Neotek Media</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#f4f1ee',
+                        sand: '#f9f8f6',
+                        warm: '#1a1615',
+                        accent: '#84b9ef',
+                        'accent-deep': '#5a9de0',
+                        'lime': '#e8f5a3',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a1615;
+        }
+    </style>
+</head>
+
+<body class="bg-sand min-h-screen">
+    <!-- Navigation -->
+    <nav class="flex items-center justify-between px-8 py-6 max-w-6xl mx-auto">
+        <a href="home.html"><img src="assets/neotek-media-logo.svg" alt="Neotek Media" class="h-9"></a>
+        <div class="hidden md:flex space-x-8 items-center">
+            <a href="home.html#services" class="text-sm text-warm/60 hover:text-warm transition">Services</a>
+            <a href="home.html#about" class="text-sm text-warm/60 hover:text-warm transition">About</a>
+            <a href="contact.html"
+                class="px-5 py-2.5 bg-warm text-white text-sm font-medium rounded-full hover:bg-warm/90 transition">Book
+                a Call</a>
+        </div>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <section class="px-8 py-16 md:py-24">
+        <div class="max-w-xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-warm mb-4">Contact us</h1>
+            <p class="text-warm/50 text-lg font-light mb-12">Our friendly team would love to hear from you.</p>
+
+            <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+                <!-- Name Fields -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="first-name" class="block text-sm font-medium text-warm mb-2">Name<span class="text-lime-600">*</span></label>
+                        <input type="text" id="first-name" name="first-name" placeholder="First name" required
+                            class="w-full px-4 py-3 rounded-full border border-warm/10 bg-white/60 focus:outline-none focus:border-accent-deep focus:ring-1 focus:ring-accent-deep text-warm placeholder:text-warm/30">
+                    </div>
+                    <div>
+                        <label for="last-name" class="block text-sm font-medium text-warm mb-2">Last name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last name"
+                            class="w-full px-4 py-3 rounded-full border border-warm/10 bg-white/60 focus:outline-none focus:border-accent-deep focus:ring-1 focus:ring-accent-deep text-warm placeholder:text-warm/30">
+                    </div>
+                </div>
+
+                <!-- Email Field -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-warm mb-2">Email<span class="text-lime-600">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required
+                        class="w-full px-4 py-3 rounded-full border border-warm/10 bg-white/60 focus:outline-none focus:border-accent-deep focus:ring-1 focus:ring-accent-deep text-warm placeholder:text-warm/30">
+                </div>
+
+                <!-- Phone Field -->
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-warm mb-2">Phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number"
+                        class="w-full px-4 py-3 rounded-full border border-warm/10 bg-white/60 focus:outline-none focus:border-accent-deep focus:ring-1 focus:ring-accent-deep text-warm placeholder:text-warm/30">
+                </div>
+
+                <!-- Message Field -->
+                <div>
+                    <label for="message" class="block text-sm font-medium text-warm mb-2">Message<span class="text-lime-600">*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type here..." required
+                        class="w-full px-4 py-3 rounded-3xl border border-warm/10 bg-white/60 focus:outline-none focus:border-accent-deep focus:ring-1 focus:ring-accent-deep text-warm placeholder:text-warm/30 resize-y"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit"
+                    class="w-full py-4 bg-lime text-warm font-medium rounded-full hover:bg-lime/80 transition">
+                    Send Message
+                </button>
+
+                <!-- Privacy Policy -->
+                <div class="flex items-start gap-3">
+                    <input type="checkbox" id="privacy" name="privacy" required
+                        class="mt-1 w-4 h-4 rounded border-warm/20 text-accent-deep focus:ring-accent-deep">
+                    <label for="privacy" class="text-sm text-warm/60">
+                        You agree to our friendly <a href="#" class="text-lime-600 hover:underline">privacy policy</a>.
+                    </label>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-warm/5 py-8 px-8 mt-auto">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <img src="assets/neotek-media-logo.svg" alt="Neotek Media" class="h-7 opacity-40">
+            <p class="text-xs text-warm/30">&copy; 2025 Neotek Media. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
